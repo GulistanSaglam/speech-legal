@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <title>Terms of Use | Speech</title>
+
+    <meta
+        name="description"
+        content="Terms of Use for Speech, a real-time speech transcription and translation application."
+    >
+
+    <meta name="theme-color" content="#f7f7f8">
+
+    <style>
+        :root {
+            --background: #f7f7f8;
+            --surface: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: #e5e5e7;
+            --link: #007aff;
+            --notice: #f2f2f7;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            background: var(--background);
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-width: 320px;
+            min-height: 100vh;
+            min-height: 100dvh;
+
+            background: var(--background);
+            color: var(--text);
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            font-size: 16px;
+            line-height: 1.7;
+
+            /*
+             * Prevent Safari/iOS from automatically changing
+             * font sizes when displaying the page.
+             */
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+
+            /*
+             * Prevent long email addresses or other content
+             * from overflowing on small screens.
+             */
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+
+            /*
+             * Better text rendering on Apple devices.
+             */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+
+            padding:
+                40px
+                20px
+                40px;
+        }
+
+        .document {
+            width: 100%;
+
+            background: var(--surface);
+
+            padding: 50px;
+
+            border-radius: 16px;
+            border: 1px solid var(--border);
+
+            /*
+             * Prevent content from creating horizontal scrolling.
+             */
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 23px;
+            line-height: 1.3;
+
+            margin-top: 40px;
+            margin-bottom: 15px;
+
+            letter-spacing: -0.2px;
+        }
+
+        h3 {
+            font-size: 18px;
+            line-height: 1.4;
+
+            margin-top: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+
+            /*
+             * Makes links easier to tap on iPhone.
+             */
+            -webkit-tap-highlight-color: rgba(0, 122, 255, 0.15);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--link);
+            outline-offset: 3px;
+            border-radius: 3px;
+        }
+
+        .meta {
+            color: var(--secondary);
+            margin-bottom: 35px;
+        }
+
+        .notice {
+            background: var(--notice);
+            border-left: 4px solid var(--link);
+
+            padding: 16px 18px;
+            margin: 20px 0;
+
+            border-radius: 8px;
+
+            /*
+             * Makes the notice readable even on narrow iPhones.
+             */
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 25px;
+
+            border-top: 1px solid var(--border);
+
+            color: var(--secondary);
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+        /*
+         * iPhone / small-screen layout
+         */
+        @media (max-width: 600px) {
+
+            html,
+            body {
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+
+                margin: 0;
+
+                /*
+                 * Support iPhone notch / Dynamic Island /
+                 * bottom home indicator.
+                 */
+                padding-top: max(20px, env(safe-area-inset-top));
+                padding-right: 0;
+                padding-bottom: max(20px, env(safe-area-inset-bottom));
+                padding-left: 0;
+            }
+
+            .document {
+                width: 100%;
+
+                padding-top: 28px;
+                padding-right: 20px;
+                padding-bottom: 40px;
+                padding-left: 20px;
+
+                border-radius: 0;
+
+                border-left: 0;
+                border-right: 0;
+            }
+
+            h1 {
+                font-size: 30px;
+                line-height: 1.2;
+            }
+
+            h2 {
+                font-size: 21px;
+                line-height: 1.3;
+
+                margin-top: 34px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            body {
+                font-size: 16px;
+                line-height: 1.65;
+            }
+
+            .meta {
+                margin-bottom: 30px;
+            }
+
+            .notice {
+                padding: 15px 16px;
+                margin: 18px 0;
+            }
+
+            ul {
+                padding-left: 22px;
+            }
+
+            footer {
+                margin-top: 40px;
+            }
+        }
+
+        /*
+         * Very small iPhones
+         */
+        @media (max-width: 375px) {
+
+            .document {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        /*
+         * Dark Mode support for iPhone users who use
+         * system-wide Dark Mode.
+         */
+        @media (prefers-color-scheme: dark) {
+
+            :root {
+                --background: #000000;
+                --surface: #1c1c1e;
+                --text: #f5f5f7;
+                --secondary: #98989d;
+                --border: #38383a;
+                --link: #0a84ff;
+                --notice: #2c2c2e;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<main class="document">
+
+    <h1>Terms of Use</h1>
+
+    <div class="meta">
+        <strong>Speech</strong><br>
+        Last Updated: September 6, 2026
+    </div>
+
+
+    <!-- 1 -->
+
+    <h2>1. Acceptance of These Terms</h2>
+
+    <p>
+        These Terms of Use ("Terms") govern your access to and use
+        of the Speech mobile application and related services
+        (collectively, the "Service").
+    </p>
+
+    <p>
+        The Service is provided by <strong>Speech</strong>.
+    </p>
+
+    <p>
+        By accessing or using the Service, you agree to be bound
+        by these Terms. If you do not agree with these Terms,
+        do not use the Service.
+    </p>
+
+
+    <!-- 2 -->
+
+    <h2>2. Description of the Service</h2>
+
+    <p>
+        Speech provides real-time speech recognition, transcription,
+        translation, translated text, conversation history,
+        saved translations, and related communication functionality.
+    </p>
+
+    <p>
+        The Service uses artificial intelligence and automated
+        speech-processing technologies, including services provided
+        by third-party providers such as OpenAI.
+    </p>
+
+    <p>
+        Features may change, be added, modified, suspended, or
+        discontinued from time to time.
+    </p>
+
+
+    <!-- 3 -->
+
+    <h2>3. Eligibility</h2>
+
+    <p>
+        You must meet the minimum age requirements applicable in
+        your location to use the Service.
+    </p>
+
+    <p>
+        Unless otherwise required by applicable law, Speech is
+        not directed to children under 13.
+    </p>
+
+    <p>
+        By using the Service, you represent that you are legally
+        permitted to use the Service under the laws applicable
+        to you.
+    </p>
+
+
+    <!-- 4 -->
+
+    <h2>4. User Accounts</h2>
+
+    <p>
+        Certain features of Speech require an account.
+    </p>
+
+    <p>
+        You are responsible for:
+    </p>
+
+    <ul>
+        <li>maintaining the security of your account;</li>
+        <li>keeping authentication information secure;</li>
+        <li>providing accurate information;</li>
+        <li>using only your own account or an account you are authorized to use;</li>
+        <li>notifying us of unauthorized use of your account.</li>
+    </ul>
+
+    <p>
+        You may not use another person's account without
+        authorization.
+    </p>
+
+
+    <!-- 5 -->
+
+    <h2>5. License to Use the App</h2>
+
+    <p>
+        Subject to your compliance with these Terms, we grant you
+        a limited, non-exclusive, non-transferable,
+        non-sublicensable license to use the App on Apple-branded
+        devices that you own or control, solely for your personal
+        and lawful use of the Service.
+    </p>
+
+    <p>
+        This license does not transfer ownership of the App or
+        any intellectual property rights to you.
+    </p>
+
+    <p>
+        You may not copy, modify, distribute, sell, lease,
+        sublicense, reverse engineer, decompile, disassemble,
+        or create derivative works from the App, except to the
+        extent that applicable law expressly permits such activity.
+    </p>
+
+
+    <!-- 6 -->
+
+    <h2>6. Microphone and Audio Processing</h2>
+
+    <p>
+        Speech requires microphone access to provide real-time
+        speech recognition, transcription, and translation.
+    </p>
+
+    <p>
+        When you start a translation session, the App may capture
+        and transmit microphone audio for real-time processing.
+    </p>
+
+    <p>
+        Speech does not intentionally store raw microphone audio
+        as a permanent recording in its own database.
+    </p>
+
+    <p>
+        Audio may be transmitted to third-party service providers,
+        including OpenAI, as necessary to provide the requested
+        AI functionality.
+    </p>
+
+    <p>
+        You can stop microphone processing by ending the translation
+        session or disabling microphone access through your device
+        settings.
+    </p>
+
+
+    <!-- 7 -->
+
+    <h2>7. Use Around Other People</h2>
+
+    <p>
+        You are responsible for complying with applicable laws when
+        using Speech around other people.
+    </p>
+
+    <p>
+        If you use Speech to process another person's speech,
+        you are responsible for obtaining any consent or permission
+        required by applicable law.
+    </p>
+
+    <p>
+        You must not use Speech to secretly record, monitor,
+        intercept, or process another person's private communications
+        where prohibited by law.
+    </p>
+
+
+    <!-- 8 -->
+
+    <h2>8. AI-Generated Results</h2>
+
+    <p>
+        Speech uses artificial intelligence to generate
+        transcriptions and translations.
+    </p>
+
+    <p>
+        AI-generated results may contain:
+    </p>
+
+    <ul>
+        <li>transcription errors;</li>
+        <li>translation errors;</li>
+        <li>missing or incorrectly recognized words;</li>
+        <li>incorrect context;</li>
+        <li>incorrect interpretation;</li>
+        <li>pronunciation-related errors.</li>
+    </ul>
+
+    <p>
+        We do not guarantee that every transcription or translation
+        will be accurate, complete, timely, or appropriate for
+        every situation.
+    </p>
+
+    <p>
+        You are responsible for reviewing important AI-generated
+        results before relying on them.
+    </p>
+
+
+    <!-- 9 -->
+
+    <h2>9. Environmental and Technical Limitations</h2>
+
+    <p>
+        Speech is designed primarily for relatively clear speech
+        environments.
+    </p>
+
+    <div class="notice">
+        <strong>
+            Speech should not be relied upon in musical environments,
+            concerts or music performances, environments with loud
+            background music, extremely crowded environments,
+            environments where many people are speaking simultaneously,
+            environments with excessive background noise, or
+            environments with significant echo or sound interference.
+        </strong>
+    </div>
+
+    <p>
+        Performance may be reduced by:
+    </p>
+
+    <ul>
+        <li>music;</li>
+        <li>loud background noise;</li>
+        <li>multiple simultaneous speakers;</li>
+        <li>crowd noise;</li>
+        <li>echo;</li>
+        <li>poor microphone conditions;</li>
+        <li>distance from the speaker;</li>
+        <li>accents or unusual pronunciation;</li>
+        <li>poor network connectivity.</li>
+    </ul>
+
+    <p>
+        For best results, use Speech in a relatively quiet
+        environment with clear speech.
+    </p>
+
+
+    <!-- 10 -->
+
+    <h2>10. High-Risk and Critical Uses</h2>
+
+    <p>
+        Speech should not be used as the sole source of information
+        for:
+    </p>
+
+    <ul>
+        <li>emergency communications;</li>
+        <li>medical communications or medical decisions;</li>
+        <li>legal communications or legal decisions;</li>
+        <li>financial decisions;</li>
+        <li>safety-critical situations;</li>
+        <li>
+            situations where inaccurate transcription or translation
+            could cause significant harm.
+        </li>
+    </ul>
+
+    <p>
+        Always independently verify important information when
+        accuracy is critical.
+    </p>
+
+
+    <!-- 11 -->
+
+    <h2>11. User Content</h2>
+
+    <p>
+        You are responsible for the speech, text, transcripts,
+        translations, and other content that you process, submit,
+        or store using Speech.
+    </p>
+
+    <p>
+        You represent that you have the rights and permissions
+        necessary to process such content through the Service.
+    </p>
+
+    <p>
+        You must not use Speech to process content unlawfully or
+        in a manner that infringes another person's rights.
+    </p>
+
+
+    <!-- 12 -->
+
+    <h2>12. Acceptable Use</h2>
+
+    <p>
+        You agree not to use the Service to:
+    </p>
+
+    <ul>
+        <li>violate applicable laws or regulations;</li>
+        <li>violate another person's privacy or rights;</li>
+        <li>secretly monitor communications where prohibited by law;</li>
+        <li>attempt unauthorized access to our systems;</li>
+        <li>interfere with or disrupt the Service;</li>
+        <li>circumvent security or subscription restrictions;</li>
+        <li>transmit malicious software or harmful code;</li>
+        <li>exploit or attempt to exploit security vulnerabilities;</li>
+        <li>abuse or overload the Service;</li>
+        <li>facilitate illegal activity.</li>
+    </ul>
+
+
+    <!-- 13 -->
+
+    <h2>13. Subscriptions and In-App Purchases</h2>
+
+    <p>
+        Certain features of Speech may require a paid subscription.
+    </p>
+
+    <p>
+        Subscriptions and other digital purchases made through the
+        App are processed through Apple's In-App Purchase system.
+    </p>
+
+    <p>
+        Before purchasing a subscription, the applicable price,
+        subscription period, features, and other material terms
+        will be presented to you through the App.
+    </p>
+
+    <p>
+        Subscription availability, pricing, and features may vary
+        by country or region.
+    </p>
+
+
+    <!-- 14 -->
+
+    <h2>14. Automatic Renewal and Cancellation</h2>
+
+    <p>
+        Where an auto-renewable subscription is offered, the
+        subscription may automatically renew unless you cancel it
+        before the end of the applicable subscription period.
+    </p>
+
+    <p>
+        You can manage or cancel subscriptions through your Apple
+        account subscription settings.
+    </p>
+
+    <p>
+        Apple controls payment processing and billing for
+        App Store purchases.
+    </p>
+
+    <div class="notice">
+        <strong>
+            Deleting your Speech account does not automatically
+            cancel an active Apple subscription.
+        </strong>
+    </div>
+
+
+    <!-- 15 -->
+
+    <h2>15. Account Deletion</h2>
+
+    <p>
+        You may delete your Speech account through the App where
+        account deletion functionality is provided.
+    </p>
+
+    <p>
+        Account deletion may result in the deletion or anonymization
+        of information associated with your account, subject to
+        applicable legal, security, accounting, fraud-prevention,
+        or other legitimate retention requirements.
+    </p>
+
+    <p>
+        Account deletion does not automatically cancel an Apple
+        subscription.
+    </p>
+
+
+    <!-- 16 -->
+
+    <h2>16. Intellectual Property</h2>
+
+    <p>
+        The App, software, design, user interface, trademarks,
+        logos, graphics, and other materials provided by us are
+        owned by or licensed to <strong>Speech</strong>.
+    </p>
+
+    <p>
+        Except as expressly permitted by these Terms or applicable
+        law, you may not reproduce, modify, distribute, sell,
+        publish, or create derivative works from our proprietary
+        materials.
+    </p>
+
+
+    <!-- 17 -->
+
+    <h2>17. Third-Party Services</h2>
+
+    <p>
+        Speech relies on third-party services and infrastructure
+        that may include Apple, OpenAI, Amazon Web Services, and
+        other providers necessary to operate the Service.
+    </p>
+
+    <p>
+        Your use of the App may also be subject to applicable
+        third-party terms and agreements.
+    </p>
+
+    <p>
+        You agree to comply with applicable third-party terms when
+        using the Service.
+    </p>
+
+    <p>
+        We are not responsible for outages, failures, changes,
+        or interruptions caused by third-party services outside
+        our reasonable control.
+    </p>
+
+
+    <!-- 18 -->
+
+    <h2>18. Apple-Specific Terms</h2>
+
+    <p>
+        These Terms are between you and <strong>Speech</strong>,
+        and not between you and Apple.
+    </p>
+
+    <p>
+        Apple is not responsible for the App or its content and
+        does not provide maintenance or support services for the
+        App, except where required by applicable law.
+    </p>
+
+    <p>
+        In the event of any third-party claim that the App or your
+        possession and use of the App infringes that third party's
+        intellectual property rights, Speech, not Apple,
+        will be responsible for the investigation, defense,
+        settlement, and discharge of such claim, subject to
+        applicable law.
+    </p>
+
+    <p>
+        Apple and its subsidiaries are third-party beneficiaries
+        of these Terms and may enforce these Terms against you
+        where applicable.
+    </p>
+
+
+    <!-- 19 -->
+
+    <h2>19. Service Availability</h2>
+
+    <p>
+        We aim to provide a reliable Service but do not guarantee
+        that Speech will always be:
+    </p>
+
+    <ul>
+        <li>available;</li>
+        <li>uninterrupted;</li>
+        <li>error-free;</li>
+        <li>secure;</li>
+        <li>accurate;</li>
+        <li>compatible with every device or network.</li>
+    </ul>
+
+    <p>
+        We may perform maintenance, updates, modifications,
+        or changes to the Service from time to time.
+    </p>
+
+
+    <!-- 20 -->
+
+    <h2>20. Disclaimer of Warranties</h2>
+
+    <p>
+        To the maximum extent permitted by applicable law, the
+        Service is provided on an <strong>"AS IS"</strong> and
+        <strong>"AS AVAILABLE"</strong> basis.
+    </p>
+
+    <p>
+        To the maximum extent permitted by law, we disclaim
+        warranties that the Service will be uninterrupted,
+        error-free, completely accurate, secure, or suitable
+        for every particular purpose.
+    </p>
+
+    <p>
+        Nothing in these Terms excludes or limits any warranty,
+        right, or protection that cannot legally be excluded
+        or limited under applicable law.
+    </p>
+
+
+    <!-- 21 -->
+
+    <h2>21. Limitation of Liability</h2>
+
+    <p>
+        To the maximum extent permitted by applicable law,
+        Speech will not be liable for indirect,
+        incidental, special, consequential, exemplary, or
+        punitive damages arising from or relating to your use
+        of the Service.
+    </p>
+
+    <p>
+        Nothing in these Terms excludes or limits liability that
+        cannot legally be excluded or limited under applicable law.
+    </p>
+
+
+    <!-- 22 -->
+
+    <h2>22. Suspension and Termination</h2>
+
+    <p>
+        We may suspend or terminate access to the Service where
+        reasonably necessary, including when:
+    </p>
+
+    <ul>
+        <li>you violate these Terms;</li>
+        <li>fraudulent or abusive activity occurs;</li>
+        <li>security risks arise;</li>
+        <li>required by applicable law.</li>
+    </ul>
+
+    <p>
+        You may stop using the Service at any time.
+    </p>
+
+
+    <!-- 23 -->
+
+    <h2>23. Privacy</h2>
+
+    <p>
+        Your use of Speech is also governed by our
+        <a href="privacy.html">Privacy Policy</a>.
+    </p>
+
+    <p>
+        The Privacy Policy explains how we collect, use, store,
+        protect, and delete personal information and how we use
+        third-party services to provide the Service.
+    </p>
+
+
+    <!-- 24 -->
+
+    <h2>24. Changes to These Terms</h2>
+
+    <p>
+        We may update these Terms from time to time to reflect
+        changes to the Service, technology, business practices,
+        or applicable legal requirements.
+    </p>
+
+    <p>
+        When we make changes, we will update the "Last Updated"
+        date at the top of these Terms.
+    </p>
+
+    <p>
+        Where required by applicable law, we will provide
+        additional notice of material changes.
+    </p>
+
+
+    <!-- 25 -->
+
+    <h2>25. Governing Law</h2>
+
+    <p>
+        These Terms are governed by the applicable laws governing
+        the relationship between you and Speech,
+        without regard to conflict-of-law principles, except
+        where mandatory consumer protection laws provide otherwise.
+    </p>
+
+    <p>
+        Nothing in these Terms is intended to deprive you of
+        mandatory rights or protections available to you under
+        the laws of your country or place of residence.
+    </p>
+
+
+    <!-- 26 -->
+
+    <h2>26. Severability</h2>
+
+    <p>
+        If any provision of these Terms is determined to be
+        invalid, unlawful, or unenforceable, that provision will
+        be enforced to the maximum extent permitted by law and
+        the remaining provisions will remain in effect.
+    </p>
+
+
+    <!-- 27 -->
+
+    <h2>27. Contact Us</h2>
+
+    <p>
+        If you have questions, complaints, or claims regarding
+        the Service or these Terms, please contact:
+    </p>
+
+    <p>
+        <strong>Speech</strong><br>
+
+        Email:
+        <a href="mailto:gulistansglm@gmail.com">
+            gulistansglm@gmail.com
+        </a>
+    </p>
+
+
+    <footer>
+        © 2026 Speech. All rights reserved.
+    </footer>
+
+</main>
+
+</div>
+
+</body>
+</html>
